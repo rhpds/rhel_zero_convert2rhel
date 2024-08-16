@@ -20,7 +20,7 @@ In order to automate this process as much as possible, you will kick off
 the conversion analysis using the activation key combination from #3
 above:
 
-[source,bash]
+[source,bash,subs="+macros,+attributes",role=execute]
 ----
 convert2rhel analyze --org 12451665 --activationkey convert2rhel
 ----
@@ -42,7 +42,7 @@ issue.
 
 To remediate this issue, enter the following command:
 
-[source,bash]
+[source,bash,subs="+macros,+attributes",role=execute]
 ----
 yum update -y && reboot
 ----

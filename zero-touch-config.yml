@@ -5,25 +5,19 @@ antora:
   dir: www
   modules:
     - name: index
-      label: Module 1
+      label: Introduction
     - name: module-02
-      label: Module 2
+      label: Installing Convert2RHEL
     - name: module-03
-      label: Module 3
+      label: Pre-conversion Analysis
     - name: module-04
-      label: Module 4
+      label: Running Convert2RHEL
     - name: module-05
-      label: Module 5
+      label: Completing the Conversion
 tabs:
-  - name: ">_ Root"
+  - name: ">_ centos"
     port: 443
     path: /wetty
     user: root
-    host: rhel
+    host: centos
     type: tty
-  - name: ">_ rhel"
-    port: 443
-    path: /wetty
-  - name: "Cockpit"
-    port: 9943
-    path: "/cockpit"

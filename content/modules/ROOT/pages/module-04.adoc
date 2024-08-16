@@ -9,7 +9,7 @@ adding a `-y` to the end of the command. This will auto-accept the EULA
 and prompts your conversion offers.
 ____
 
-[source,bash]
+[source,bash,subs="+macros,+attributes",role=execute]
 ----
 convert2rhel --org 12451665 --activationkey convert2rhel -y
 ----

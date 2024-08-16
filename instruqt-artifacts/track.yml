@@ -1,0 +1,39 @@
+slug: convert2rhel
+id: x3zfsjtkmgw1
+title: Migrate to Red Hat Enterprise Linux from CentOS Linux
+teaser: Convert a CentOS Linux system to Red Hat Enterprise Linux using the convert2rhel
+  tool.
+description: |+
+  # Overview
+
+  After completing this scenario, users will be able to convert a CentOS Linux instance to a Red Hat Enterprise Linux instance.
+
+  ## Concepts included in this scenario:
+
+  * Subscribing to additional repositories
+  * Convert2RHEL utility
+
+  ## Example Usecase:
+
+  In order to standardize your infrasturcture under a single platform, you need to convert your RPM-based servers over to Red Hat Enterprise Linux.
+
+  ## Resources:
+  https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/converting_from_an_rpm-based_linux_distribution_to_rhel
+
+icon: https://storage.googleapis.com/instruqt-frontend/img/tracks/default.png
+tags:
+- rhel
+- conversions
+owner: rhel
+developers:
+- myee@redhat.com
+- ehendric@redhat.com
+show_timer: true
+timelimit: 3060
+lab_config:
+  overlay: false
+  width: 33
+  position: right
+  feedback_recap_enabled: true
+  loadingMessages: true
+checksum: "2505061033153678586"

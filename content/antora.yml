@@ -1,14 +1,14 @@
 ---
 
 name: modules
-version: master
+version: main
 nav:
   - modules/ROOT/nav.adoc
 
 asciidoc:
   attributes:
     lab_name: "Migrate to Red Hat Enterprise Linux from CentOS Linux"
-    release-version: master
+    release-version: main
     page-pagination: true
     my_var: "foo - this is an asciidoc attribute from `content/antora.yml`"
     guid: my-guid

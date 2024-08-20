@@ -26,11 +26,16 @@ convert2rhel analyze --org 12451665 --activationkey convert2rhel
 ----
 
 ____
-*Note:* This process will take some time!
+NOTE: This process will take some time!
 ____
 
 You’ll be asked to confirm several the process at several steps. Type a
 `y` and hit enter to continue the process.
+
+[source,text]
+----
+convert output here
+----
 
 == Reviewing the analysis
 
@@ -47,20 +52,25 @@ To remediate this issue, enter the following command:
 yum update -y && reboot
 ----
 
+[source,text]
+----
+convert output here
+----
+
 The terminal will lose connection with the centos host leaving the
 message `exited`.
 
 .exited
-image::exited.png[exited]
+image::../assets/images/exited.png[exited]
 
 You can reconnect the session in the `centos` tab if desired. Refresh
 the `centos` tab until you are reconnected.
 
 .refresh
-image::refreshbutton.png[refresh]
+image::../assets/images/refreshbutton.png[refresh]
 
 ____
-[!NOTE] Optional: Once your system is back from its reboot, you may
+NOTE: Optional: Once your system is back from its reboot, you may
 re-run the analyze command to see the results after fixing the kernel
 version.
 ____

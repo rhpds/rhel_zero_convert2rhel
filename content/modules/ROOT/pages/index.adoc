@@ -20,6 +20,12 @@ CentOS Linux and on the latest minor version.
 cat /etc/centos-release
 ----
 
+[source,text]
+----
+cat /etc/centos-release
+CentOS Linux release 7.9.2009 (Core)
+----
+
 == Enabling the Convert2RHEL repository
 
 The Convert2RHEL RPM is an offical Red Hat package. Therefore it is

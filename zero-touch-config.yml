@@ -15,7 +15,7 @@ antora:
     - name: module-05
       label: Completing the Conversion
 tabs:
-  - name: ">_ centos"
+  - name: ">_ root"
     port: 443
     path: /wetty
     user: root

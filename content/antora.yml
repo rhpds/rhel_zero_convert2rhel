@@ -8,7 +8,7 @@ nav:
 asciidoc:
   attributes:
     lab_name: "Migrate to Red Hat Enterprise Linux from CentOS Linux"
-    release-version: main
+    release-version: master
     page-pagination: true
     my_var: "foo - this is an asciidoc attribute from `content/antora.yml`"
     guid: my-guid

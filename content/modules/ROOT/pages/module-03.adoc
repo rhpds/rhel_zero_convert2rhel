@@ -61,13 +61,13 @@ The terminal will lose connection with the centos host leaving the
 message `exited`.
 
 .exited
-image::assets/images/exited.png[exited]
+image::exited.png[exited]
 
 You can reconnect the session in the `centos` tab if desired. Refresh
 the `centos` tab until you are reconnected.
 
 .refresh
-image::assets/images/refreshbutton.png[refresh]
+image::refreshbutton.png[refresh]
 
 ____
 NOTE: Optional: Once your system is back from its reboot, you may

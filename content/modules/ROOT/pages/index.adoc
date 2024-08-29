@@ -15,11 +15,13 @@ Support.
 Before you begin the installation process, verify that you are running
 CentOS Linux and on the latest minor version.
 
+.Command
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 cat /etc/centos-release
 ----
 
+.Output
 [source,text]
 ----
 cat /etc/centos-release

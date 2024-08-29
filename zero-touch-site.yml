@@ -19,7 +19,7 @@ ui:
       contents: "static_files: [ .nojekyll ]"
 
 output:
-  dir: ./www
+  dir: ./www/www
 
 runtime:
   cache_dir: ./.cache/antora

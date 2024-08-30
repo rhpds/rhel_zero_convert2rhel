@@ -5,31 +5,29 @@
 reboot
 ----
 
-After executing reboot, the session in the `centos` tab will end.
-Refresh the `centos` tab until you are reconnected.
+After executing reboot, the session in the `centos` tab will end. When this happens, clic the `reconnect` button as you did during the previous steps until you are reconnected.
 
-.refresh
-image::refreshbutton.png[refresh]
+.reconnect
+image::exited-zt.png[reconnect]
 
-With the convert2rhel utility running, the system will now replace the
-CentOS signed packages with Red Hat signed versions. The system will
-reboot a few times: first to boot into a temporary environment from
-which to make these changes, a second time to perform a relabel on
-SELinux contexts, and a final time in order to boot into the newly
-created RHEL environment.
+With the convert2rhel utility running, the system will now replace the CentOS signed packages with Red Hat signed versions.
+
+The system will reboot three times:
+
+1. First to boot into a temporary environment from which to make these changes.
+2. Second to perform a relabel on SELinux contexts.
+3. Final to boot into the newly created RHEL environment.
 
 == Verifying the upgrade
 
-Now that you are connected into your new RHEL system, you should verify
-your results:
+Now that you are connected into your new RHEL system, you should verify your results:
 
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 cat /etc/redhat-release
 ----
 
-Verify that the necessary Red Hat repositories are enabled. Also, note
-that none of the old CentOS repos are available:
+Verify that the necessary Red Hat repositories are enabled. Also, note that none of the old CentOS repos are available:
 
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
@@ -58,5 +56,5 @@ For up-to-date version of the EULA, visit [2].
 [1] https://www.redhat.com/licenses/Red_Hat_GPLv2-Based_EULA_20191118.pdf
 [2] https://www.redhat.com/en/about/agreements
 
-... output truncated ...
+<< OUTPUT ABRIDGED >>
 ----

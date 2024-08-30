@@ -3,11 +3,7 @@
 Now that you have fixed the inhibitor, it is time to convert your system
 to RHEL.
 
-____
-Pro Tip: You can further automate the conversion process by
-adding a `-y` to the end of the command. This will auto-accept the EULA
-and prompts your conversion offers.
-____
+TIP: You can further automate the conversion process by adding a `-y` to the end of the command. This will auto-accept the EULA and prompts your conversion offers.
 
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
@@ -16,12 +12,12 @@ convert2rhel --org 12451665 --activationkey convert2rhel -y
 
 [source,text]
 ----
-... output truncated ...
+<< OUTPUT ABRIDGED >>
 
 [07/22/2022 18:42:43] TASK - [Convert: Final system checks before main conversion] **************
 Comparing the loaded kernel modules with the modules available in the following RHEL kernel packages available in the enabled repositories:
 
-... output truncated ...
+<< OUTPUT ABRIDGED >>
 
 [07/22/2022 18:48:33] TASK - [Final: Remove temporary folder /var/lib/convert2rhel/] ************
 Temporary folder /var/lib/convert2rhel/ removed
@@ -31,4 +27,4 @@ Conversion successful!
 WARNING - In order to boot the RHEL kernel, restart of the system is needed.
 ----
 
-The conversion can take about 15 minutes to complete.
+Note: The conversion takes approximately 15 minutes to complete.

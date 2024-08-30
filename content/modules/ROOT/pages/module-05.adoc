@@ -5,18 +5,10 @@
 reboot
 ----
 
-After executing reboot, the session in the `centos` tab will end. When this happens, clic the `reconnect` button as you did during the previous steps until you are reconnected.
+IMPORTANT: After executing reboot, the session in the `centos` tab will end. When this happens, click the `reconnect` button as you did during the previous step until you are reconnected.
 
 .reconnect
 image::exited-zt.png[reconnect]
-
-With the convert2rhel utility running, the system will now replace the CentOS signed packages with Red Hat signed versions.
-
-The system will reboot three times:
-
-1. First to boot into a temporary environment from which to make these changes.
-2. Second to perform a relabel on SELinux contexts.
-3. Final to boot into the newly created RHEL environment.
 
 == Verifying the upgrade
 
@@ -25,6 +17,11 @@ Now that you are connected into your new RHEL system, you should verify your res
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 cat /etc/redhat-release
+----
+
+[source,text]
+----
+Red Hat Enterprise Linux Server release 7.9 (Maipo)
 ----
 
 Verify that the necessary Red Hat repositories are enabled. Also, note that none of the old CentOS repos are available:
@@ -36,7 +33,11 @@ yum repolist
 
 [source,text]
 ----
-convert output here
+<< OUTPUT ABRIDGED >>
+repo id                           repo name                                 status
+convert2rhel-for-rhel-7-rpms      Convert2RHEL for OS                       16
+rhel-7-server-rpms/7Server/x86_64 Red Hat Enterprise Linux 7 Server (RPMs)  34,484
+repolist: 34,500
 ----
 
 Now you can review the logs from the conversion itself:
@@ -48,9 +49,14 @@ less /var/log/convert2rhel/convert2rhel.log
 
 [source,text]
 ----
-# less /var/log/convert2rhel/convert2rhel.log
+<< OUTPUT ABRIDGED >>
+convert2rhel command used:
+/usr/bin/convert2rhel --org ***** --activationkey ***** -y
+WARNING - Passing the RHSM password or activation key through the --activationkey or --password options is insecure as it leaks the values through the list of running processes. We recommend using the safer --
+config-file option instead.
+[2024-08-30T21:40:32+0000] DEBUG - /var/run/lock/convert2rhel.pid PID 8352 unlocked.
 
-[07/22/2022 17:55:00] TASK - [Prepare: Show Red Hat software EULA] ******************************
+[2024-08-30T21:40:32+0000] TASK - [Prepare: Show Red Hat software EULA] ******************************
 The following text is a copy of the November 18, 2019 version of Red Hat GPLv2-Based End User License Agreement (EULA) [1].
 For up-to-date version of the EULA, visit [2].
 [1] https://www.redhat.com/licenses/Red_Hat_GPLv2-Based_EULA_20191118.pdf

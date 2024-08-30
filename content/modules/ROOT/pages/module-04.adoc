@@ -14,13 +14,17 @@ convert2rhel --org 12451665 --activationkey convert2rhel -y
 ----
 << OUTPUT ABRIDGED >>
 
-[07/22/2022 18:42:43] TASK - [Convert: Final system checks before main conversion] **************
-Comparing the loaded kernel modules with the modules available in the following RHEL kernel packages available in the enabled repositories:
+[2024-08-30T21:58:09+0000] TASK - [Final: Update breadcrumbs] ****************************************
+Writing breadcrumbs to '/etc/migration-results'.
+Writing RHSM custom facts to '/etc/rhsm/facts/convert2rhel.facts'.
 
-<< OUTPUT ABRIDGED >>
+[2024-08-30T21:58:09+0000] TASK - [Final: Update RHSM custom facts] **********************************
+Updating RHSM custom facts collected during the conversion.
+RHSM custom facts uploaded successfully.
 
-[07/22/2022 18:48:33] TASK - [Final: Remove temporary folder /var/lib/convert2rhel/] ************
-Temporary folder /var/lib/convert2rhel/ removed
+[2024-08-30T21:58:10+0000] TASK - [Post-conversion report] *******************************************
+No problems detected!
+
 
 Conversion successful!
 

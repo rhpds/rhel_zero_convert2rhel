@@ -1,5 +1,6 @@
 == You will need to reboot the system in order to put the changes into effect.
 
+.Command
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 reboot
@@ -14,11 +15,13 @@ image::exited-zt.png[reconnect]
 
 Now that you are connected into your new RHEL system, you should verify your results:
 
+.Command
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 cat /etc/redhat-release
 ----
 
+.Output
 [source,text]
 ----
 Red Hat Enterprise Linux Server release 7.9 (Maipo)
@@ -26,11 +29,13 @@ Red Hat Enterprise Linux Server release 7.9 (Maipo)
 
 Verify that the necessary Red Hat repositories are enabled. Also, note that none of the old CentOS repos are available:
 
+.Command
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 yum repolist
 ----
 
+.Output
 [source,text]
 ----
 << OUTPUT ABRIDGED >>
@@ -42,11 +47,13 @@ repolist: 34,500
 
 Now you can review the logs from the conversion itself:
 
+.Command
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 less /var/log/convert2rhel/convert2rhel.log
 ----
 
+.Output
 [source,text]
 ----
 << OUTPUT ABRIDGED >>

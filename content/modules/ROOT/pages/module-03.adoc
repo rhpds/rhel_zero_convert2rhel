@@ -12,6 +12,7 @@ There are several different combinations of arguments that can be used to execut
 
 In order to automate this process as much as possible, you will kick off the conversion analysis using the activation key combination from #3 above:
 
+.Command
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 convert2rhel analyze --org 12451665 --activationkey convert2rhel
@@ -21,6 +22,7 @@ NOTE: This process will take some time!
 
 You’ll be asked to confirm several the process at several steps. Type a `y` and hit enter to continue the process.
 
+.Output
 [source,text]
 ----
 << OUTPUT ABRIDGED >>
@@ -41,11 +43,13 @@ When the analysis process is complete, you will noticed a couple of errors. The 
 
 To remediate this issue, enter the following command:
 
+.Command
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 yum update -y && reboot
 ----
 
+.Output
 [source,text]
 ----
 << OUTPUT ABRIDGED >>

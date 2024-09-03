@@ -33,4 +33,4 @@ Conversion successful!
 WARNING - In order to boot the RHEL kernel, restart of the system is needed.
 ----
 
-Note: The conversion takes approximately 15 minutes to complete.
+NOTE: The conversion takes approximately 15 minutes to complete.

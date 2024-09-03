@@ -18,9 +18,7 @@ In order to automate this process as much as possible, you will kick off the con
 convert2rhel analyze --org 12451665 --activationkey convert2rhel
 ----
 
-NOTE: This process will take some time!
-
-You’ll be asked to confirm several the process at several steps. Type a `y` and hit enter to continue the process.
+IMPORTANT: This process will take some time. During the analysis you will be prompted to confirm several steps before proceeding. Type a `y` and hit enter to continue the process.
 
 .Output
 [source,text]

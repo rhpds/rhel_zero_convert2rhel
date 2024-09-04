@@ -40,7 +40,7 @@ First, you will pull down the GPG signing key:
 .Command
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
-curl -o /etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release https://www.redhat.com/security/data/fd431d51.txt
+wget -O /etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release https://www.redhat.com/security/data/fd431d51.txt
 ----
 
 Second, download the SSL certificate:

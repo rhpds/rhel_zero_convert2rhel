@@ -12,6 +12,8 @@ Convert2RHEL is also a supported operation which means if you run into
 issues with the conversion process, you can open a ticket with Red Hat
 Support.
 
+IMPORTANT: You may notice the green bar on the terminal. This lab environment uses tmux to prevent the convert2rhel utility from exiting accidentally. tmux allows the session to remain active, even if the terminal is disconnected, ensuring that the conversion process continues uninterrupted.
+
 Before you begin the installation process, verify that you are running
 CentOS Linux and on the latest minor version.
 
